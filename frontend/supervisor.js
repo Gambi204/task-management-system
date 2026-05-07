@@ -105,7 +105,7 @@ async function loadTasks() {
         <h3>${task.title}</h3>
         <p>${task.description}</p>
         <p><strong>Status:</strong> ${task.status}</p>
-        <p><strong>Assigned Employee ID:</strong> ${task.employee.full_name}</p>
+        <p><strong>Assigned Employee ID:</strong> ${task.employee_id}</p>
 
         ${
           task.file_path
