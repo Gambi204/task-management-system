@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supervisor Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Supervisor Dashboard</h1>
+    <p id="welcome"></p>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Create Employee</h2>
+
+      <form id="employeeForm">
+        <input type="text" id="fullName" placeholder="Full name" required>
+        <input type="email" id="employeeEmail" placeholder="Email" required>
+        <input type="password" id="employeePassword" placeholder="Password" required>
+        <button type="submit">Create Employee</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Create and Assign Task</h2>
+
+      <form id="taskForm">
+        <input type="text" id="title" placeholder="Task title" required>
+        <textarea id="description" placeholder="Task description" required></textarea>
+
+        <select id="employeeSelect" required>
+          <option value="">Select employee</option>
+        </select>
+
+        <input type="file" id="file">
+
+        <button type="submit">Assign Task</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>All Tasks</h2>
+      <p id="alertBox"></p>
+      <div id="taskList"></div>
+    </section>
+  </main>
+
+  <script src="supervisor.js"></script>
+</body>
+</html>

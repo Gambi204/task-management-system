@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  color: #222;
+}
+
+header {
+  background: #111827;
+  color: white;
+  padding: 20px 40px;
+}
+
+main {
+  padding: 30px 40px;
+}
+
+.login-card {
+  max-width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.task-card {
+  border: 1px solid #ddd;
+  border-left: 5px solid #2563eb;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+#alertBox {
+  background: #ecfeff;
+  border: 1px solid #06b6d4;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
